@@ -1,0 +1,297 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (150.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (266.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (1.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateStudents (20121220164215)
+Connecting to database specified by database.yml
+  [1m[36m (221.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (175.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (2.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateStudents (20121220164215)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (140.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (259.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (1.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateStudents (20121220165320)
+  [1m[35m (158.0ms)[0m  CREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` text, `father_name` text, `mother_name` text, `class_to` text, `age` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (58.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20121220165320')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/students" for 127.0.0.1 at 2012-12-20 22:24:03 +0530
+Connecting to database specified by database.yml
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT `students`.* FROM `students` [0m
+  Rendered students/index.html.erb within layouts/application (2.0ms)
+Compiled scaffolds.css  (28ms)  (pid 11305)
+Compiled students.css  (0ms)  (pid 11305)
+Compiled application.css  (37ms)  (pid 11305)
+Compiled jquery.js  (19ms)  (pid 11305)
+Compiled jquery_ujs.js  (0ms)  (pid 11305)
+Compiled students.js  (98ms)  (pid 11305)
+Compiled application.js  (157ms)  (pid 11305)
+Completed 200 OK in 290ms (Views: 256.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:04 +0530
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:04 +0530
+Served asset /students.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:04 +0530
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:04 +0530
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:04 +0530
+Served asset /students.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:04 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:04 +0530
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-12-20 22:24:05 +0530
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (6.5ms)
+  Rendered students/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:05 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:05 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:05 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:05 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:05 +0530
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:05 +0530
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:05 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-12-20 22:24:26 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O7kXMxVnralvnI+iS6j2RCXESbsIsLvLFDVg8fGVBgg=", "student"=>{"name"=>"chandan", "father_name"=>"father", "mother_name"=>"mother", "class_to"=>"12", "age"=>"24"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `students` (`age`, `class_to`, `created_at`, `father_name`, `mother_name`, `name`, `updated_at`) VALUES (24, '12', '2012-12-20 16:54:26', 'father', 'mother', 'chandan', '2012-12-20 16:54:26')[0m
+  [1m[35m (56.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 80ms (ActiveRecord: 57.3ms)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2012-12-20 22:24:26 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT `students`.* FROM `students` WHERE `students`.`id` = 1 LIMIT 1[0m
+  Rendered students/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:26 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:26 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:26 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:26 +0530
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:26 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:26 +0530
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:26 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2012-12-20 22:24:30 +0530
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT `students`.* FROM `students` 
+  Rendered students/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:30 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:30 +0530
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:30 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-12-20 22:24:30 +0530
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:30 +0530
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:30 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-20 22:24:30 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2012-12-20 22:27:30 +0530
+Processing by StudentsController#new as HTML
+  Rendered students/_form.html.erb (5.1ms)
+  Rendered students/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-20 22:27:30 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-12-20 22:27:30 +0530
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-20 22:27:30 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:30 +0530
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:30 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:30 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:30 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/students" for 127.0.0.1 at 2012-12-20 22:27:44 +0530
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O7kXMxVnralvnI+iS6j2RCXESbsIsLvLFDVg8fGVBgg=", "student"=>{"name"=>"mahesh", "father_name"=>"father", "mother_name"=>"mother", "class_to"=>"12", "age"=>"25"}, "commit"=>"Create Student"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `students` (`age`, `class_to`, `created_at`, `father_name`, `mother_name`, `name`, `updated_at`) VALUES (25, '12', '2012-12-20 16:57:44', 'father', 'mother', 'mahesh', '2012-12-20 16:57:44')
+  [1m[36m (52.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/students/2
+Completed 302 Found in 57ms (ActiveRecord: 52.7ms)
+
+
+Started GET "/students/2" for 127.0.0.1 at 2012-12-20 22:27:44 +0530
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStudent Load (0.2ms)[0m  SELECT `students`.* FROM `students` WHERE `students`.`id` = 2 LIMIT 1
+  Rendered students/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:44 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-20 22:27:44 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:44 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-20 22:27:44 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-12-20 22:27:44 +0530
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:44 +0530
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:44 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2012-12-20 22:27:46 +0530
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT `students`.* FROM `students` [0m
+  Rendered students/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-20 22:27:46 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-12-20 22:27:46 +0530
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-20 22:27:46 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:46 +0530
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:46 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:46 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-20 22:27:46 +0530
+Served asset /application.js - 304 Not Modified (2ms)
